@@ -14,7 +14,7 @@ on:
       - TRANSLATION
 
 env:
-  APPNAME: 'actbuildx'
+  APP: 'actbuildx'
 
 jobs:
   release:
