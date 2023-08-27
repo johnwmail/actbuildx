@@ -13,9 +13,6 @@ on:
       - LICENCE
       - TRANSLATION
 
-env:
-  APP: 'actbuildx'
-
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -48,7 +45,7 @@ jobs:
           file: docker/Dockerfile
           platforms: linux/amd64, linux/arm64
           push: true
-          tags: docker.io/john3box/$APP:latest,docker.io/john3box/$APP:${{ env.RELEASE_DATE }}
+          tags: docker.io/john3box/actbuildx:latest,docker.io/john3box/actbuildx:${{ env.RELEASE_DATE }}
           build-args: |
             "release=1"
 
