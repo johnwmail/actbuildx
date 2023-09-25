@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     schedule:
-    - cron: "05 05 05 * *" # Build it every mouth on 5
+      - cron: '2 6 26 * *'
     branches:
       - "main"
       - "master"
