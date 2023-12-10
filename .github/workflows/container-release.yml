@@ -2,9 +2,9 @@ name: Build and release container
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '2 6 26 * *'
   push:
-    schedule:
-      - cron: '2 6 26 * *'
     branches:
       - "main"
       - "master"
