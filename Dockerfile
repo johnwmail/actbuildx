@@ -1,4 +1,4 @@
-FROM docker.io/node:16-bookworm
+FROM docker.io/node:20-bookworm
 RUN curl -fsSL https://get.docker.com | bash
 RUN apt update -y
 RUN apt install -y jq zip
